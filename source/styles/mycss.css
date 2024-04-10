@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Michromа&display=swap');
+
+body {
+    font-family: Michroma, serif;
+    background: radial-gradient(#a8bcec 0%, #0043b7 100%);
+}
+
+p{
+    color: aquamarine;
+}
+
+.nav-link {
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(213, 231, 225);
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(213, 231, 225);
+}
+
+.sidebar{
+    color: aquamarine;
+    background: linear-gradient(90deg, #0043b7 0%, #a8bcec 100%);
+}
+
+.card{
+    color: aquamarine;
+    background: linear-gradient(90deg, #0043b7 0%, #a8bcec 100%);
+}
+.card a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.slide-text, 
+.footer-text{
+    color: aquamarine;
+    margin: auto auto
+}
+
+footer, 
+.btn-outline-primary {
+    background: linear-gradient(90deg, #c4c4d3 0%, #5e7fcb 100%);
+}
+
+.media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 800px) {
+    .carousel-indicators{
+        display: none;
+    }
+}
+
+/* Последний раз закончила на 6:02:15 (подключение шрифта по api)
+Чтобы подключить шрифт, мы заходим на сайт:google fonts css api, копируем ссылку на заголовке использовать шривт дисплей, затем ставим в самом начале css файлика @import url, и внутри скобочек с одинарными кавычками ставим скопированную ссылку)
+Иерархия: Сначала мы делаем одну карточку очень хорошо, затем множим их и  наполняем контентом. Так строится полно
+ценный сайт. 
+- Чтобы убрать подчеркивахния на ссылке мы выбираем к кому хотим обратиться и пишем в css файле text-decoration: выбираем none
+/* Закончила на 6:50:29 нужно сделать надпись can we help you?/
+
